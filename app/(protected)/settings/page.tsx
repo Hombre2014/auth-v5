@@ -1,4 +1,5 @@
 import { auth, signOut } from '@/auth';
+import { Button } from '@/components/ui/button';
 
 const SettingsPage = async () => {
   const session = await auth();
@@ -13,7 +14,9 @@ const SettingsPage = async () => {
           await signOut();
         }}
       >
-        <button type="submit">Logout</button>
+        <Button type="submit" variant="destructive">
+          Sign out
+        </Button>
       </form>
     </div>
   );
