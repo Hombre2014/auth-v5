@@ -41,8 +41,15 @@ export const LoginForm = () => {
 
     startTransition(() => {
       login(values).then((data) => {
-        setSuccess(data.success);
-        setError(data.error);
+        if (data?.error) {
+          form.reset();
+          setError(data.error);
+        }
+
+        if (data?.success) {
+          form.reset();
+          setSuccess(data.success);
+        }
       });
     });
     // If you have a real API routes use
