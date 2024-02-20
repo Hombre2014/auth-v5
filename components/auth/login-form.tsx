@@ -50,14 +50,12 @@ export const LoginForm = () => {
         if (data?.error) {
           form.reset();
           setError(data.error);
-          // TODO Add when we add 2FA
-          // setSuccess(data?.success);
         }
 
-        // if (data?.success) {
-        //   form.reset();
-        //   setSuccess(data.success);
-        // }
+        if (data?.success) {
+          form.reset();
+          setSuccess(data.success);
+        }
       });
     });
     // If you have a real API routes use
