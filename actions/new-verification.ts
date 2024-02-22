@@ -8,6 +8,7 @@ export const newVerification = async (token: string) => {
   const existingToken = await getVerificationTokenByToken(token);
 
   if (!existingToken) {
+    console.log('Existing token: ', existingToken);
     return { error: 'Token does not exist!' };
   }
 
