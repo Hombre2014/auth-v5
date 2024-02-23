@@ -5,7 +5,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
+} from '../ui/dropdown-menu';
 import { FaUser } from 'react-icons/fa';
 import { ExitIcon } from '@radix-ui/react-icons';
 
