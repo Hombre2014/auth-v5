@@ -1,7 +1,8 @@
 # Auth V5
 
 > Next Auth V5 Advanced guide
-> This repo is no longer maintained. It has been moved and deployed [here:](https://github.com/Hombre2014/nextjs-14-auth-v5-tutorial)
+
+!! This repo is no longer maintained. It has been moved and deployed [here:](https://github.com/Hombre2014/nextjs-14-auth-v5-tutorial) !!
 
 ## Built With
 
